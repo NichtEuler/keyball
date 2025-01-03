@@ -38,7 +38,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_DEL   , KC_Q     , KC_W     , KC_E     , KC_R     , KC_T     ,                                  KC_Y     , KC_U     , KC_I     , KC_O     , KC_P     , KC_INT3  ,
     KC_TAB   , LGUI_T(KC_A), LALT_T(KC_S), LCTL_T(KC_D), LSFT_T(KC_F), KC_G,                           KC_H     , LSFT_T(KC_J),   LCTL_T(KC_K),   LALT_T(KC_L),  LGUI_T(KC_QUOT)  , TO(4)  ,
     KC_LSFT  , KC_Z     , KC_X     , KC_C     , KC_V     , KC_B     , KC_LBRC  ,                       KC_LBRC, KC_N     , KC_M     , KC_COMM  , KC_DOT   , KC_SLSH  , KC_RSFT  ,
-    KC_LCTL  , KC_LGUI  ,LT(4, KC_DEL), KC_LALT ,KC_LNG2,LT(1,KC_SPC),LT(2, KC_TAB),             KC_BSPC,  LT(2,KC_ENT),LT(1,KC_LNG2),KC_RGUI, _______ , KC_RALT  , KC_PSCR
+    KC_LCTL  , KC_LGUI  ,LT(4, KC_DEL), KC_LALT ,KC_LNG2,LT(2,KC_SPC),LT(3, KC_TAB),             KC_BSPC,  LT(2,KC_ENT),LT(3,KC_LNG2),KC_RGUI, _______ , KC_RALT  , KC_PSCR
   ),
 
   [1] = LAYOUT_universal(
@@ -76,7 +76,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 layer_state_t layer_state_set_user(layer_state_t state) {
     // Auto enable scroll mode when the highest layer is 3
-    keyball_set_scroll_mode(get_highest_layer(state) == 3);
+    keyball_set_scroll_mode(get_highest_layer(state) == 4);
     return state;
 }
 
