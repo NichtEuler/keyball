@@ -36,7 +36,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [0] = LAYOUT_universal(
     KC_ESC   , KC_1     , KC_2     , KC_3     , KC_4     , KC_5     ,                                  KC_6     , KC_7     , KC_8     , KC_9     , KC_0     , KC_MINS  ,
     KC_DEL   , KC_Q     , KC_W     , KC_E     , KC_R     , KC_T     ,                                  KC_Y     , KC_U     , KC_I     , KC_O     , KC_P     , KC_EQL  ,
-    KC_TAB   , LGUI_T(KC_A), LALT_T(KC_S), LCTL_T(KC_D), LSFT_T(KC_F), KC_G,                           KC_H     , LSFT_T(KC_J),   LCTL_T(KC_K),   LALT_T(KC_L),  LGUI_T(KC_QUOT)  , TO(2)  ,
+    KC_TAB   , LGUI_T(KC_A), LALT_T(KC_S), LCTL_T(KC_D), LSFT_T(KC_F), KC_G,                           KC_H     , LSFT_T(KC_J),   LCTL_T(KC_K),   LALT_T(KC_L),  LGUI_T(KC_SCLN)  , TO(2)  ,
     KC_LSFT  , KC_Z     , KC_X     , KC_C     , KC_V     , KC_B     , KC_LBRC  ,                       KC_LBRC, KC_N     , KC_M     , KC_COMM  , KC_DOT   , KC_SLSH  , KC_RSFT  ,
     KC_LCTL  , KC_LGUI  ,LT(4, KC_DEL), KC_LALT ,KC_LNG2,LT(1,KC_SPC),LT(3, KC_TAB),             KC_BSPC,  LT(1,KC_ENT),LT(3,KC_LNG2),KC_RGUI, _______ , KC_RALT  , KC_PSCR
   ),
@@ -45,7 +45,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     SSNP_FRE , KC_F1    , KC_F2    , KC_F3    , KC_F4    , KC_F5    ,                                  KC_F6    , KC_F7    , KC_F8    , KC_F9    , KC_F10   , KC_F11   ,
     SSNP_VRT , _______  , KC_7     , KC_8     , KC_9     , _______  ,                                  _______  , KC_LEFT  , KC_UP    , KC_RGHT  , _______  , KC_F12   ,
     SSNP_HOR , _______  , KC_4     , KC_5     , KC_6     ,S(KC_SCLN),                                  KC_PGUP  , KC_BTN1  , KC_DOWN  , KC_BTN2  , KC_BTN3  , _______  ,
-    _______  , _______  , KC_1     , KC_2     , KC_3     ,S(KC_MINS), S(KC_8)  ,            S(KC_9)  , KC_PGDN  , CPI_D1K  , CPI_D100 , CPI_I100 , CPI_I1K  , KBC_SAVE  ,
+    _______  , _______  , KC_1     , KC_2     , KC_3     ,S(KC_MINS), KC_QUOT  ,            S(KC_QUOT)  , KC_PGDN  , CPI_D1K  , CPI_D100 , CPI_I100 , CPI_I1K  , KBC_SAVE  ,
     _______  , _______  , KC_0     , KC_DOT   , _______  , _______  , _______  ,            KC_BSPC  , KC_DEL   , _______  , _______  , _______  , _______  , _______
   ),
   [2] = LAYOUT_universal(
