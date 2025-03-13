@@ -16,13 +16,15 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-#define KC_COPY LCTL(KC_C)
-#define KC_PASTE LCTL(KC_V)
-#define KC_CUT LCTL(KC_X)
 
 #include QMK_KEYBOARD_H
 
 #include "quantum.h"
+
+#define KC_COPY LCTL(KC_C)
+#define KC_PASTE LCTL(KC_V)
+#define KC_CUT LCTL(KC_X)
+
 
 enum custom_keycodes {
   QWERTY = SAFE_RANGE,
