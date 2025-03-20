@@ -20,7 +20,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #include QMK_KEYBOARD_H
 
 #include "quantum.h"
-#define WAIT_FOR_USB
+
 
 
 #define KC_COPY LCTL(KC_C)
