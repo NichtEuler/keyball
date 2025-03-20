@@ -38,4 +38,3 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define QUICK_TAP_TERM 45
 #define SPLIT_USB_DETECT
 #define NO_USB_STARTUP_CHECK
-#define WAIT_FOR_USB
