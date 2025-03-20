@@ -37,4 +37,4 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 // Enable rapid switch from tap to hold, disables double tap hold auto-repeat.
 #define QUICK_TAP_TERM 45
 #define SPLIT_USB_DETECT
-#define NO_USB_STARTUP_CHECK
+#define WAIT_FOR_USB
